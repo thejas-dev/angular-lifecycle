@@ -1,0 +1,13 @@
+<main class="main">
+  <img src="Angular_full_color_logo.svg.png" alt=""
+  height="300" width="300"
+  />
+  <h1>Welcome to Angular Lifecycle!</h1>
+  <button (click)="toggleShowCounter()" >Show/Hide Counter</button>
+  
+</main>
+
+<div *ngIf="showCounter">
+    <app-counter-page [count]="count" ></app-counter-page>
+</div>
+

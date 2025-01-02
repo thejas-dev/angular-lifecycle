@@ -1,0 +1,19 @@
+
+<div class="counter-container">
+
+    <h1>Welcome to Counter!</h1>
+    
+    <div class="button-container">
+        <button (click)="incrementCount()">Increment</button>
+        <button (click)="decrementCount()">Decrement</button>
+    </div>
+
+    <app-counter [count]="count" >
+        <div #ContentProjection>
+            <h1>
+                {{ 'Content Projection' }}
+            </h1>
+        </div>
+    </app-counter>
+
+</div>
